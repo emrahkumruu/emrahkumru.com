@@ -41,7 +41,7 @@
     config.libscripts = [
         //'bower_components/dependency/js/unminified/file'
     ];
-    
+
     config.scripts = [
         config.paths.js + '**/*.js'
     ];

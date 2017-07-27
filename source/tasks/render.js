@@ -14,7 +14,7 @@ var render = function(gulp, options, plugins) {
     gulp.task('render', function() {
         var data = require('load-data')(options.config.paths.data);
 
-        return gulp.src(options.config.paths.tpl + 'pages/**/*.tpl')
+        return gulp.src(options.config.paths.tpl + 'pages/**/*.{tpl,njk}')
             .pipe(plugins.data(function() {
                 return data
             }))

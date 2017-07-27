@@ -86,14 +86,12 @@
             <div class="box">
                 <h2>Sayfa Listes</h2>
                 <div class="pages">
-                    {% for dir, files in pages -%}
-                        <div class="page">
-                            <h3>{{dir | title}}</h3>
-                            {% for file in files -%}
-                                <a href="./{{dir}}/{{file}}.html" target="_blank" class="links">{{file | title}}</a>
-                            {% endfor %}
+                    <div class="page">
+                            <h3>Main</h3>
+                            <a href="./main/main.html" target="_blank" class="links">Main</a>
+                            
                         </div>
-                    {% endfor %}
+                    
                 </div>
             </div>
         </div>

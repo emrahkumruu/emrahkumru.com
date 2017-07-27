@@ -7,7 +7,7 @@ var connect = function(gulp, options, plugins) {
         plugins.connect.server({
             root:       'app',
             livereload: true,
-            port:       3000
+            port:       3030
         });
     });
 };

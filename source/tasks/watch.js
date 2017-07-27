@@ -7,7 +7,7 @@ var watch = function(gulp, options, plugins) {
         // --------------------------
         // watch:html
         // --------------------------
-        gulp.watch(options.config.paths.tpl + '**/*.tpl', ['render']);
+        gulp.watch(options.config.paths.tpl + '**/*.{tpl,njk}', ['render', 'list-pages']);
         gulp.watch(options.config.paths.data + '**/*.json', ['render']);
         gulp.watch(options.config.paths.app + '**/*.html', ['reload:html']);
 
