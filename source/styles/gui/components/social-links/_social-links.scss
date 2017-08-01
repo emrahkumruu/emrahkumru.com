@@ -1,0 +1,23 @@
+/* @author Emrah Kumru */
+
+/** -------------------------------------------
+
+    ------------------------------------------- **/
+
+.social-links {
+    display: inline-block;
+    height: 100%;
+
+    &-row {
+        height: calc(100% / 3);
+        border: 1px solid red;
+    }
+
+    &-circle {
+        @include dims(40px);
+        border: 1px solid black;
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center;
+    }
+}

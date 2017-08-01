@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>
-           Testing
+            Testing
         </title>
 
         <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
@@ -13,19 +13,21 @@
 
         <script type="text/javascript" src="../assets/scripts/emrahkumru.min.js"></script>
 
-
     </head>
 </head>
 <body>
-{% block header %}
-    {% include "components/layout/header/header.njk" %}
-{% endblock %}
+    <div class="page-wrap">
+        {% block header %}
+            {#{% include "components/layout/header/header.njk" %}#}
+        {% endblock %}
 
-{% block content %}{% endblock %}
+        <div class="page-content">
+            {% block content %}{% endblock %}
+        </div>
 
-{% block footer %}
-    {% include "components/layout/footer/footer.njk" %}
-{% endblock %}
-
+        {% block footer %}
+            {#{% include "components/layout/footer/footer.njk" %}#}
+        {% endblock %}
+    </div>
 </body>
 </html>
