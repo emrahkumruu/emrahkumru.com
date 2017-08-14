@@ -22,7 +22,7 @@
 
     config.namespace = {
         templates : 'Rocket.templates'
-    }
+    };
 
     config.banner = [
         '/*! <%= pkg.name %> \n' +
@@ -43,6 +43,7 @@
     ];
 
     config.scripts = [
+        'node_modules/jquery/dist/jquery.js',
         config.paths.js + '**/*.js'
     ];
 
