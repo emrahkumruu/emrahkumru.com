@@ -1,0 +1,28 @@
+/* @author Emrah Kumru */
+
+/** -------------------------------------------
+
+    ------------------------------------------- **/
+
+.keywords-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    //border: 1px solid $color-white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    @include font-size(14px);
+
+    &-left {
+        left: -10%;
+        text-align: left;
+    }
+
+    &-right {
+        right: -10%;
+        text-align: right;
+    }
+
+}

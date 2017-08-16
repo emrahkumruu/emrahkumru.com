@@ -1048,6 +1048,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html {
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -5315,6 +5316,10 @@ dl dt {
   clip: auto;
 }
 
+/* @author Emrah Kumru */
+/** -------------------------------------------
+
+    ------------------------------------------- **/
 /**
  * Layout
  * In layout component, there lays the general position of the main elements like page-wrap, header, footer, content etc.
@@ -5532,7 +5537,7 @@ dl dt {
   color: #fff;
   text-align: center;
   cursor: pointer;
-  z-index: 5;
+  z-index: 10;
   -webkit-animation-name: fadeinup;
   animation-name: fadeinup;
   -webkit-animation-duration: 1s;
@@ -5589,7 +5594,7 @@ dl dt {
 .profile-circle:nth-child(7) {
   bottom: -40px;
   left: -45px;
-  -webkit-animation-delay: .5s;
+  -webkit-animation-delay: .7s;
   animation-delay: .7s;
 }
 
@@ -5742,9 +5747,153 @@ dl dt {
 /** -------------------------------------------
 
     ------------------------------------------- **/
-.keywords {
+/* @author Emrah Kumru */
+/** -------------------------------------------
+
+    ------------------------------------------- **/
+.keywords-text {
+  display: block;
+  padding: 5px 10px;
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.keywords-content-left .keywords-text {
+  -webkit-animation-name: fadeinleft;
+  animation-name: fadeinleft;
+}
+
+.keywords-content-right .keywords-text {
+  -webkit-animation-name: fadeinright;
+  animation-name: fadeinright;
+}
+
+.keywords-text:nth-child(1) {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.keywords-text:nth-child(2) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.keywords-text:nth-child(3) {
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+
+.keywords-text:nth-child(4) {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+
+.keywords-text:nth-child(5) {
+  -webkit-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+
+.keywords-text:nth-child(6) {
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s;
+}
+
+.keywords-text:nth-child(7) {
+  -webkit-animation-delay: 3.7s;
+  animation-delay: 3.7s;
+}
+
+.keywords-text:nth-child(8) {
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s;
+}
+
+.keywords-text:nth-child(9) {
+  -webkit-animation-delay: 4.7s;
+  animation-delay: 4.7s;
+}
+
+.keywords-text:nth-child(10) {
+  -webkit-animation-delay: 5.2s;
+  animation-delay: 5.2s;
+}
+
+.keywords-text:nth-child(11) {
+  -webkit-animation-delay: 5.7s;
+  animation-delay: 5.7s;
+}
+
+@-webkit-keyframes fadeinleft {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinleft {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeinright {
+  0% {
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinright {
+  0% {
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @author Emrah Kumru */
+/** -------------------------------------------
+
+    ------------------------------------------- **/
+.keywords-content {
+  display: inline-block;
   position: absolute;
-  border: 1px solid black;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.keywords-content-left {
+  left: -10%;
+  text-align: left;
+}
+
+.keywords-content-right {
+  right: -10%;
+  text-align: right;
 }
 
 /**

@@ -42,7 +42,7 @@
         color: #fff;
         text-align: center;
         cursor: pointer;
-        z-index: 5;
+        z-index: 10;
 
         -webkit-animation-name: fadeinup;
         animation-name: fadeinup;
@@ -106,7 +106,7 @@
             bottom: -40px;
             left: -45px;
 
-            -webkit-animation-delay: .5s;
+            -webkit-animation-delay: .7s;
             animation-delay: .7s;
         }
 

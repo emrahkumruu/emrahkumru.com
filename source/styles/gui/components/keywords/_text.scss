@@ -1,0 +1,87 @@
+/* @author Emrah Kumru */
+
+/** -------------------------------------------
+
+    ------------------------------------------- **/
+.keywords-text {
+    display: block;
+    padding: 5px 10px;
+    //border: 1px solid;
+    color: $color-white;
+    text-transform: capitalize;
+
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    .keywords-content-left & {
+        -webkit-animation-name: fadeinleft;
+        animation-name: fadeinleft;
+    }
+    .keywords-content-right & {
+        -webkit-animation-name: fadeinright;
+        animation-name: fadeinright;
+    }
+
+    @for $i from 1 through 11{ 
+        &:nth-child(#{$i}){
+            -webkit-animation-delay: .2s + $i / 2;
+            animation-delay: .2s + $i / 2;
+        }
+    }
+
+}
+
+@-webkit-keyframes fadeinleft {
+    0% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+        opacity: 0;      
+    }
+    100% {
+        //-webkit-transform: none;
+        //transform: none;
+        opacity: 1;        
+    }
+}
+
+@keyframes fadeinleft {
+    0% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+        opacity: 0;        
+    }
+    100% {
+        //-webkit-transform: none;
+        //transform: none;
+        opacity: 1;        
+    }
+    
+}
+
+@-webkit-keyframes fadeinright {
+    0% {
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0);
+        opacity: 0;      
+    }
+    100% {
+        //-webkit-transform: none;
+        //transform: none;
+        opacity: 1;        
+    }
+}
+
+@keyframes fadeinright {
+    0% {
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0);
+        opacity: 0;        
+    }
+    100% {
+        //-webkit-transform: none;
+        //transform: none;
+        opacity: 1;        
+    }
+}
