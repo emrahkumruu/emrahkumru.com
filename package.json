@@ -45,6 +45,7 @@
   },
   "preferGlobal": true,
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "node-sass": "^4.6.1"
   }
 }

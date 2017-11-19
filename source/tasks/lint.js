@@ -5,11 +5,14 @@
 var lint = function(gulp, options, plugins) {
     gulp.task('lint:scss', function() {
         return gulp.src(options.config.paths.scss + '**\/*.scss')
+
+        /*
             .pipe(plugins.stylelint({
                 reporters: [
                     {formatter: 'string', console: true}
                 ]
             }))
+         */
             .pipe(plugins.notify({message: 'Style Linting completed', onLast: true}));
     });
 

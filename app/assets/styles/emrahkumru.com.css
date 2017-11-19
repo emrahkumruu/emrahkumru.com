@@ -5346,7 +5346,10 @@ dl dt {
   justify-content: center;
   min-width: 100%;
   min-height: 100%;
-  background: linear-gradient(138deg, #90caf9 0, #e3f2fd 100%);
+  background: url("/assets/images/marvel-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
 }
 
 /**
@@ -5616,7 +5619,7 @@ dl dt {
   transition: all 200ms ease-in;
   border: 0;
   background: #fff;
-  color: #37afea;
+  color: #213141;
   z-index: 2;
 }
 
